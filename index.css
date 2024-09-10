@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+    --Yellow: hsl(47, 88%, 63%);
+
+    --White: hsl(0, 0%, 100%);
+
+    --Gray-500: hsl(0, 0%, 42%);
+    --Gray-950: hsl(0, 0%, 7%);
+
+}
+
+/* font-family: "Figtree"; */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--Yellow);
+}
+
+.all-content {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background-color: var(--White);
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    width: 22%;
+    border: 1px solid black;
+    padding: 20px;
+    box-shadow: 8px 8px 0 0 black;
+    font-family: "Figtree";
+}
+
+.top {
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.label {
+    padding: 6px 10px;
+    background-color: var(--Yellow);
+    font-weight: 800;
+    /* Just realized this property exist. */
+    width: fit-content;
+    border-radius: 4px;
+    margin-bottom: 12px;
+    cursor: pointer;
+}
+
+h5 {
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-weight: 800;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+h2:hover {
+    color: var(--Yellow);
+}
+
+.details {
+    color: var(--Gray-500);
+    font-weight: 500;
+    line-height: 25px;
+    margin-bottom: 20px;
+}
+
+.signature {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.face {
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+}
+
+.name {
+    font-weight: 800;
+    font-size: 14px;
+}
+
+/* targets only devices with screens and must be 600px width or lower to convert to this layout */
+@media only screen and (max-width: 600px) {
+    .card {
+        width: 80%;
+    }
+
+}
